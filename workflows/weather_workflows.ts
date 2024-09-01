@@ -11,8 +11,7 @@ import { WeatherAnnouncementDefinition } from "../functions/weather_functions.ts
 export const WeatherAnnouncementWorkflow = DefineWorkflow({
   callback_id: "", //TODO: change callback_id to YOUR_NAME_weather_workflow
   title: "",//TODO: change to YOUR_NAME's weather announcement
-  description:
-    "This will send a weather report when triggered",
+  description: "This will send a weather report when triggered",
   input_parameters: {
     properties: {
       created_by: {
@@ -25,7 +24,7 @@ export const WeatherAnnouncementWorkflow = DefineWorkflow({
 
 WeatherAnnouncementWorkflow
     .addStep(WeatherAnnouncementDefinition ,{
-      channel: "" //TODO: add channel id here (given in instructions)
+      channel: "" //TODO: add channel id here
     })
 
 
