@@ -50,7 +50,7 @@ export default SlackFunction(
     
     const weatherJSON = await weather.json()
     
-    console.log(weatherJSON) //TODO: see what the response is
+    console.log(weatherJSON) //TODO: see what the response is (you don't need to do anything here, the information will appear in your terminal when you run the bot)
     
     const formattedMessage = await `:zap: The current temperature: ${JSON.stringify(weatherJSON.current.temperature_2m)}F`; //TODO: customize the message with the information you want!
 
